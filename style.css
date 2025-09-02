@@ -1,0 +1,251 @@
+body {
+    margin: 0;   
+    background-color: #faf7f2;   
+    color: #2c1a2c;
+    font-family: "Inter", sans-serif;
+}
+
+/* General */
+
+h1, h2, h3, p {
+    margin: 0;   
+}
+
+h1, h2, h3 {
+    font-family: "Cormorant Infant", serif;
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+.inner-container { 
+    display: flex;   
+    flex-direction: column;    
+    align-items: center;
+    /* max-width: 1000px;
+    margin: 0 auto; */
+}
+
+.cta {
+    background-color: #d46a6a;
+    border: none;
+    color:  #faf7f2;
+    padding: 0.813em 1.875em;
+    font-size: 0.938rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background-color: #b55252;
+}
+
+header {
+    padding: 0.85em 0;
+}
+
+main {
+    padding: 5em 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;    
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d46a6a;
+    font-size: 1.375rem;
+    font-family: "Cormorant Infant", serif;
+}
+
+header, footer {
+    background-color: #1e1e1e;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d46a6a;
+    font-family: "Cormorant Infant", serif;
+}
+
+
+/* About */
+
+.hero {
+    display: flex;
+    /* justify-content: center; */
+    gap: 3.125em;
+}
+
+.hero h1 {    
+    font-size: 3.125rem;    
+    padding-bottom: 0.2em;
+}
+
+.hero p {
+    text-align: center;    
+}
+
+.hero img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.hero-title-box {
+    text-align: center;
+}
+
+.hero-btn {
+    margin-top: 2.5em;   
+}
+
+.character-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 9em;
+}
+
+.character {
+    padding-top: 3.75em;
+    padding-left: 20px;
+}
+
+.character h2 {
+    text-transform: uppercase;    
+}
+
+
+.character-inventory h2 {
+    text-align: center;
+}
+
+.character p {
+    font-size: 0.8rem;
+    padding-bottom: 0.8em;
+    font-family: "Cormorant Infant", serif;
+    font-weight: 700;
+}
+
+
+.quotation {
+    padding-top: 3.75em;
+}
+
+.quotation h3 {
+    border-top: solid 1px #d46a6a;   
+    text-align: center;
+    padding: 0.625em 0;
+}
+
+.quotation p {
+    font-style: italic;    
+    border-bottom: solid 1px #d46a6a; 
+    text-align: center;
+    padding-bottom: 0.625em;
+}
+
+/* Journey */
+
+.journey-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.title-journey {
+    text-align: center;
+    font-size: 3.125rem;
+    padding-bottom: 0.85em;
+}
+
+
+/* Wisdom */
+
+
+.wisdom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wisdom-container h2 {
+    padding-top: 15px;
+}
+
+.wisdom-container p{
+    max-width: 500px;
+    font-style: italic;  
+    text-align: center;
+}
+
+.wisdom-container img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Media */
+
+@media (max-width: 790px) {
+    p {
+        color: red;
+    }
+    main {
+        padding: 3em 0;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero img {
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    .hero h1 {    
+        font-size: 2.5rem;    
+        padding-bottom: 0.19em;
+    }
+
+    .character-container {
+        flex-direction: column;
+        
+        align-items:start;
+        gap: 1.5em;
+    }
+
+    .journey-container {
+        padding-left: 3.125em;
+        padding-right: 3.125em;
+    }
+
+    .wisdom-container img {
+        width: 350px;
+    }
+
+    .wisdom-container h2 {
+        text-align: center;
+    }
+
+    .wisdom-container p {
+        padding-left:  0 3.125em;
+    }
+}
+
+
+
+
+
+
+
+
+
