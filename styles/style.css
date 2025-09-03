@@ -15,7 +15,7 @@ h1,
 h2,
 h3,
 p {
-  margin: 0; 
+  margin: 0;
 }
 
 h1,
@@ -80,8 +80,6 @@ nav a {
   font-size: 1.375rem;
   font-family: "Cormorant Infant", serif;
 }
-
-
 
 /* About */
 
@@ -192,7 +190,6 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .trial-container {
@@ -203,7 +200,6 @@ nav a {
   list-style-type: "\2B9A";
   padding-left: 0.313em;
 }
-
 
 .title-journey {
   text-align: center;
@@ -245,15 +241,16 @@ nav a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   max-width: 1000px;
-  margin: 0 auto; 
+  margin: 0 auto;
   gap: 1em;
-  padding: 3.125em 1.563em 0;  
+  padding: 3.125em 1.563em 0;
 }
 
 .gallery-container img {
   display: block;
   width: 100%;
   border-radius: 10px;
+  min-height: 100%;
 }
 
 /* Media 790px */
@@ -295,7 +292,6 @@ nav a {
   .wisdom-container h2 {
     text-align: center;
   }
-
 }
 
 /* Media 576px */
@@ -308,7 +304,7 @@ nav a {
   nav ul {
     flex-direction: column;
     align-items: center;
-    gap: 0.1em;    
+    gap: 0.1em;
   }
 
   nav li {
@@ -317,5 +313,5 @@ nav a {
 
   nav a {
     font-size: 1.2rem;
-  } 
+  }
 }
