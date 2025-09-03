@@ -136,7 +136,7 @@ footer {
 }
 
 .character-inventory li {
-  list-style-type: "\2B9A";
+  list-style-type: "\2B9A ";
   padding-left: 0.313em;
 }
 
@@ -218,13 +218,14 @@ footer {
 }
 
 .wisdom-container h2 {
-  padding-top: 15px;
+  padding: 2em;
 }
 
 .wisdom-container p {
   max-width: 500px;
   font-style: italic;
   text-align: center;
+  padding: 2.5em 2em 0;
 }
 
 .wisdom-container img:hover {
@@ -234,6 +235,25 @@ footer {
 
 .page-border {
   margin: 0 auto;
+}
+
+/* Gallery */
+
+.gallery-title {
+  text-align: center;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1000px;
+  margin: 0 auto; 
+  gap: 0.625em;
+  padding: 50px 10px 0;  
+}
+
+.gallery-container img {
+  border-radius: 10px;
 }
 
 /* Media */
@@ -269,16 +289,13 @@ footer {
   }
 
   .wisdom-container img {
-    width: 350px;
+    width: 270px;
   }
 
   .wisdom-container h2 {
     text-align: center;
   }
 
-  .wisdom-container p {
-    padding-left: 0 3.125em;
-  }
 }
 
 @media (max-width: 576px) {
