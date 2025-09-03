@@ -14,6 +14,10 @@ function randomNumber() {
   return Math.floor(Math.random() * 7);
 }
 
-wisdomBtn.addEventListener("click", function () {
+wisdomBtn.addEventListener("click",  () => {
   wisdomQuotation.innerHTML = wisdomArray[randomNumber()];
 });
+
+
+
+
