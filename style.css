@@ -15,7 +15,7 @@ h1,
 h2,
 h3,
 p {
-  margin: 0;
+  margin: 0; 
 }
 
 h1,
@@ -84,13 +84,13 @@ footer {
   align-items: center;
   color: #d46a6a;
   font-family: "Cormorant Infant", serif;
+  padding: 10px 0;
 }
 
 /* About */
 
 .hero {
   display: flex;
-  /* justify-content: center; */
   gap: 3.125em;
 }
 
@@ -135,7 +135,12 @@ footer {
   text-align: center;
 }
 
-.character p {
+.character-inventory li {
+  list-style-type: "\2B9A";
+  padding-left: 0.313em;
+}
+
+.character-class {
   font-size: 0.8rem;
   padding-bottom: 0.8em;
   font-family: "Cormorant Infant", serif;
@@ -163,25 +168,45 @@ footer {
 
 .progress-container {
   width: 200px;
-  height: 20px;
+  height: 10px;
   background-color: #d46a6a;
   border-radius: 10px;
 }
 
-/* .progress-bar.persistence {
-  width: 100px;
-} */
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+}
+
+.progress p {
+  font-family: "Inter", sans-serif;
+  width: 80px;
+}
 
 /* Journey */
 
 .journey-container {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
+
+.trial-container {
+  flex-basis: 260px;
+}
+
+.journey-container li {
+  list-style-type: "\2B9A";
+  padding-left: 0.313em;
+}
+
 
 .title-journey {
   text-align: center;
   font-size: 3.125rem;
-  padding-bottom: 0.85em;
+  padding-top: 0.85em;
 }
 
 /* Wisdom */
@@ -207,12 +232,13 @@ footer {
   cursor: pointer;
 }
 
+.page-border {
+  margin: 0 auto;
+}
+
 /* Media */
 
 @media (max-width: 790px) {
-  p {
-    color: red;
-  }
   main {
     padding: 3em 0;
   }
@@ -239,8 +265,7 @@ footer {
   }
 
   .journey-container {
-    padding-left: 3.125em;
-    padding-right: 3.125em;
+    padding: 1px 3.125em;
   }
 
   .wisdom-container img {
@@ -253,5 +278,25 @@ footer {
 
   .wisdom-container p {
     padding-left: 0 3.125em;
+  }
+}
+
+@media (max-width: 576px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1em;    
+  }
+
+  nav li {
+    line-height: normal;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+  }
+
+  header {
+    padding: 0.1em 0;
   }
 }
